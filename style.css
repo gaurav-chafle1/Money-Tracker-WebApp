@@ -1,0 +1,189 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  background: linear-gradient(to right, #f9fbe7, #e1f5fe);
+}
+
+h1, h2 {
+  text-align: center;
+  animation: fadeIn 1s ease-in-out;
+  color: #333;
+}
+
+.input-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+  padding: 20px;
+  background: #fff;
+  border-bottom: 2px solid #ccc;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  animation: slideIn 0.8s ease;
+}
+
+.input-section label {
+  font-weight: 600;
+}
+
+.input-section select,
+.input-section input {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  transition: all 0.3s;
+}
+
+.input-section input:focus,
+.input-section select:focus {
+  border-color: #00796b;
+  outline: none;
+  box-shadow: 0 0 6px rgba(0,121,107,0.3);
+}
+
+.input-section button {
+  padding: 8px 14px;
+  border: none;
+  background-color: #00796b;
+  color: white;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.input-section button:hover {
+  background-color: #004d40;
+}
+
+.expenses-list {
+  margin: 20px auto;
+  width: 90%;
+  max-width: 800px;
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  animation: fadeInUp 1s ease;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th, td {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid #ccc;
+}
+
+th {
+  background: #fdd835;
+  color: #333;
+}
+
+tfoot td {
+  font-weight: bold;
+  background-color: #e0f2f1;
+}
+
+.delete-btn {
+  padding: 6px 10px;
+  background-color: #e53935;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.delete-btn:hover {
+  background-color: #c62828;
+}
+
+.fade-row {
+  animation: fadeInUp 0.5s ease;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(30px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes slideIn {
+  from { transform: translateX(-50%); opacity: 0; }
+  to { transform: translateX(0); opacity: 1; }
+}
+.chart-section {
+  width: 90%;
+  max-width: 600px;
+  margin: 40px auto;
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  padding: 20px;
+  text-align: center;
+  animation: fadeInUp 1s ease;
+}
+
+#year-select {
+  padding: 6px 10px;
+  border-radius: 6px;
+  margin: 10px;
+}
+/* === Animated Gradient Background === */
+body {
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  background: linear-gradient(-45deg, #fceabb, #f8b500, #ff6f91, #a18cd1);
+  background-size: 400% 400%;
+  animation: gradientBG 15s ease infinite;
+}
+
+/* === Table Row Hover === */
+table tbody tr:hover {
+  background-color: rgba(0, 121, 107, 0.1);
+  transition: 0.3s;
+}
+
+/* === Button Interactivity === */
+.input-section button,
+#show-chart-btn {
+  transition: transform 0.2s ease, background-color 0.3s ease;
+}
+
+.input-section button:hover,
+#show-chart-btn:hover {
+  transform: scale(1.05);
+}
+
+/* === Chart Canvas Border and Hover === */
+.chart-section canvas {
+  margin-top: 20px;
+  border: 3px dashed rgba(0, 0, 0, 0.05);
+  border-radius: 12px;
+  transition: box-shadow 0.3s ease;
+}
+
+.chart-section canvas:hover {
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.2);
+}
+
+/* === Gradient Animation Keyframes === */
+@keyframes gradientBG {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
